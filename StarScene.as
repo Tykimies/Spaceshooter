@@ -6,7 +6,7 @@ package
 	{
 		public function StarScene()
 		{
-			super();
+			
 		}
 	}
 }
