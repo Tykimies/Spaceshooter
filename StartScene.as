@@ -12,9 +12,9 @@ package
 		public  var backGround:BackGround = new BackGround(stage);
 		private var startGame:StartButton = new StartButton;
 		private var quitGame:QuitGame= new QuitGame;
-		private var average:Sprite=new Sprite();//alusten kuvat valintaa varten
-		private var troll:Sprite=new Sprite();
-		private var ghost:Sprite=new Sprite();
+		private var average:AverageSprite=new AverageSprite();//alusten kuvat valintaa varten
+		private var troll:TrollSprite=new TrollSprite();
+		private var ghost:GhostSprite=new GhostSprite();
 		private var selectedShip:String="average";
 		
 		
@@ -46,18 +46,14 @@ package
 		}
 		
 		private function setupShipSelection(gamePhase:String):void//valittavat alukse ruudulle, ja toiminnallisuus(valinta) niihin
-			var i=3;
-			while
-			displayImageFromLibrary();
-			stage.addChild(imageSprite);//add it to the display list
-			public function displayImageFromLibrary():void
-			{
-				//instantiate the bitmap in the library by its identifier
-				var libraryImage:Bitmap = new Bitmap(new kfc(0,0));
-				
-				//place the image in the image container
-				imageSprite.addChild(libraryImage);
-			}
+		{   
+			
+			stage..addChildAt(ghost,1);//stageen paikkaan 1 että tulee navbarin päälle
+			
+			
+		}
+			
+			
 	}
 }
 
