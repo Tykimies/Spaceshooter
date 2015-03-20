@@ -4,9 +4,10 @@ package
 	
 	public class GhostSprite extends Sprite
 	{
+		numOfShip:int;
 		public function GhostSprite()
 		{
-			super();
+			
 		}
 	}
 }
