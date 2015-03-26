@@ -1,12 +1,19 @@
 package
 {
 	import flash.display.MovieClip;
+	import flash.display.Stage;
 	
-	public class Ghost extends MovieClip
+	import Ship;
+	
+	public class Ghost extends Ship
 	{
-		public function Ghost()
+		private var stageRef:Stage;
+		
+		public function Ghost(stageRef:Stage)
 		{
-			super();
+			this.stageRef=stageRef
+			super(stageRef);
+			
 		}
 	}
 }

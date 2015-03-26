@@ -113,7 +113,7 @@ package
 			stage.removeChild(square);
 			gamePhase="inGame";
 			trace(gamePhase, selectedShip);
-			var game:GameScene=new GameScene(gamePhase, selectedShip);
+			var game:GameScene=new GameScene(gamePhase, selectedShip, stage, backGround);
 		}
 		
 		
